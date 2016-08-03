@@ -1,0 +1,12 @@
+version: '2'
+services:
+    secondtry-postgresql:
+        container_name: secondtry-postgresql
+        image: postgres:9.5.3
+        # volumes:
+        #     - ~/volumes/jhipster/secondtry/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=secondtry
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
